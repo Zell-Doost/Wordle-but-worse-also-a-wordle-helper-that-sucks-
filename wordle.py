@@ -25,7 +25,7 @@ def wordle_bot_helper() -> None:
 		if x != ' ':
 			initial_available_answers = [word for word in initial_available_answers if x == word[i] and word in initial_available_answers]
 	number_of_lines = None
-	while(not number_of_lines):
+	while(number_of_lines == None):
 		number_of_lines = input('how many yellow letters: ')
 		if number_of_lines == '/help':
 			print("type in the number of unique 'yellow' letters\n")
